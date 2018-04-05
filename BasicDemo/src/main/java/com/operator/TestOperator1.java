@@ -21,6 +21,9 @@ package com.operator;
  *  << 左移运算符  左移一位相当于乘2。
  *  >> 右移运算符  右移一位相当于除2取商
  *  >>>无符号移位运算符
+ *  
+ *  
+ *  
  */
 public class TestOperator1 {
 
@@ -40,6 +43,15 @@ public class TestOperator1 {
 	     System.out.println("b1："+b1);
 	     System.out.println("a2："+a2);
 	     System.out.println("b2："+b2);
+
+	     //x ? y : z
+	     //其中 x 为 boolean 类型表达式，先计算 x 的值，
+	     //若为true，则整个三目运算的结果为表达式 y 的值，否则整个运算结果为表达式 z 的值。
+	     int score = 80; int x = -100;
+	     String type = score < 60 ? "不及格" : "及格";
+	     int flag = x > 0 ? 1 : (x == 0 ? 0 : -1);
+	     System.out.println("type= " + type);
+	     System.out.println("flag= "+ flag);
 
 	}
 }
